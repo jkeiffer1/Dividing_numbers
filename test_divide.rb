@@ -11,8 +11,12 @@ class Division_test < Minitest::Test
 		assert_equal(4, divide(8,2))
 	end
 
-	#def test_0_equals_message
-	#	assert_equal
+	def test_0_equals_message
+		divide(2,0)
+	end
+
+	def test_0_divide_2
+		assert_equal(0, divide(0,2))
 		
-	#end
+	end
 end
